@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Purchase Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px 5px;
+            vertical-align: middle;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        input[type="number"], 
+        input[type="date"],
+        select {
+            width: 250px;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            width: auto;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h1>Car Purchase Form</h1>
+        
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td><input type="text" name="txtName"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Email:</strong></td>
+                <td><input type="email" name="txtEmail"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Phone:</strong></td>
+                <td><input type="text" name="txtPhone"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Choose a Car:</strong></td>
+                <td>
+                    <select name="carModel">
+                        <option value="model1">Model 1</option>
+                        <option value="model2">Model 2</option>
+                        <option value="model3">Model 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><strong>Choose a Color:</strong></td>
+                <td>
+                    <select name="carColor">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="black">Black</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><strong>Quantity:</strong></td>
+                <td><input type="number" name="txtQuantity" min="1"></td>
+            </tr>
+          
+            <tr>
+                <td><strong>Delivery Date:</strong></td>
+                <td><input type="date" name="txtDeliveryDate"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <br>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
